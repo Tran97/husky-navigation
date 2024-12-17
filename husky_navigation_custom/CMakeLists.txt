@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(husky_navigation)
+project(husky_navigation_custom)
 
 find_package(catkin REQUIRED)
 

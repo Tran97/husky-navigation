@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>husky_navigation</name>
+  <name>husky_navigation_custom</name>
   <version>0.6.10</version>
   <description>Autonomous mapping and navigation demos for the Clearpath Husky</description>
 
@@ -11,7 +11,7 @@
 
   <license>BSD</license>
 
-  <url type="website">http://ros.org/wiki/husky_navigation</url>
+  <url type="website">http://ros.org/wiki/husky_navigation_custom</url>
   <url type="bugtracker">https://github.com/husky/husky/issues</url>
   <url type="repository">https://github.com/husky/husky</url>
 

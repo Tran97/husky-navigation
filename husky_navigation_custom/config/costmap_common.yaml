@@ -1,0 +1,30 @@
+footprint: [[-0.5, -0.33], [-0.5, 0.33], [0.5, 0.33], [0.5, -0.33]] # The footprint of the robot, which is used to estimate the area of the robot
+#robot_radius: ir_of_robot  # The radius of the robot, of a circular robot (use instead of footprint)
+footprint_padding: 0.01 # The amount of padding to add to the footprint of the robot (in meters)
+
+robot_base_frame: base_link
+update_frequency: 4.0
+publish_frequency: 3.0
+transform_tolerance: 0.5
+
+resolution: 0.1
+
+obstacle_range: 4.0 # maximum range sensor reading that will result in an obstacle being put into the costmap
+raytrace_range: 6.0 # range at which we will raytrace out obstacles from the map
+
+#layer definitions
+static:
+    map_topic: /map
+    subscribe_to_updates: true
+
+obstacles_pointcloud:
+    observation_sources: point_cloud_sensor
+    point_cloud_sensor: 
+        {sensor_frame: front_realsense, 
+         data_type: PointCloud2, 
+         topic: /realsense/depth/color/points, 
+         marking: true, 
+         clearing: true}
+
+inflation:
+    inflation_radius: 1.0

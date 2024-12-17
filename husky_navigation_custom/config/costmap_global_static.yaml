@@ -1,0 +1,7 @@
+global_frame: map
+rolling_window: false
+track_unknown_space: true
+
+plugins:
+  - {name: static,                  type: "costmap_2d::StaticLayer"}  # Loads the static map published by map_server
+  - {name: inflation,               type: "costmap_2d::InflationLayer"} # Expands obstacles to account for the robot's size and safety margins

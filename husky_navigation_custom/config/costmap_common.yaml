@@ -20,7 +20,7 @@ static:
 obstacles_pointcloud:
     observation_sources: point_cloud_sensor
     point_cloud_sensor: 
-        {sensor_frame: front_realsense, 
+        {sensor_frame: camera_link, 
          data_type: PointCloud2, 
          topic: /realsense/depth/color/points, 
          marking: true, 
